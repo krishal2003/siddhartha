@@ -18,7 +18,7 @@ import { styled } from "@mui/system";
 
 const NavButton = styled(Button)({
   fontWeight: "bold",
-  color: "#2A2F43",
+  color: "#2a2f43",
   textTransform: "none",
   fontSize: "16px",
   marginLeft: "20px",
@@ -33,7 +33,7 @@ const NavButton = styled(Button)({
     height: "2px",
     bottom: 0,
     left: 0,
-    backgroundColor: "#2A2F43",
+    backgroundColor: "#2a2f43",
     transition: "width 0.3s ease",
   },
   "&:hover::after": {
@@ -46,22 +46,22 @@ const NavButton = styled(Button)({
 
 const GetInTouchButton = styled(Button)({
   borderRadius: "20px",
-  borderColor: "#2A2F43",
-  color: "#2A2F43",
+  borderColor: "#2a2f43",
+  color: "#2a2f43",
   textTransform: "none",
   fontWeight: "bold",
   width: "120%",
   padding: "10px 0",
   transition: "all 0.3s ease",
   "&:hover": {
-    backgroundColor: "#2A2F43",
-    color: "#fff",
-    borderColor: "#2A2F43",
+    backgroundColor: "#white",
+    color: "#black",
+    borderColor: "#white",
   },
 });
 
 const MenuItemStyled = styled(MenuItem)({
-  color: "#2A2F43",
+  color: "#2a2f43",
   fontWeight: "bold",
   fontSize: "16px",
   paddingTop: 12,
@@ -84,9 +84,9 @@ const Navbar = () => {
   // Nav links with their hrefs
   const navLinks = [
     { title: "Home", href: "/" },
-    { title: "Services", href: "/service" },
-    { title: "About Us", href: "/about" },
-    { title: "Career", href: "/career" },
+    { title: "About", href: "/about" },
+    { title: "Admission", href: "/admission" },
+    { title: "Research", href: "/research" },
   ];
 
   return (
@@ -102,7 +102,7 @@ const Navbar = () => {
             <a href="/">
               <img
                 src="/logo.png"
-                alt="Uddheshya Logo"
+                alt="Siddhartha Vanasthali Logo"
                 style={{ height: 35, marginRight: 10 }}
               />
             </a>
@@ -119,6 +119,7 @@ const Navbar = () => {
                     href={href}
                     target="_self"
                     rel="noopener noreferrer"
+                    sx={{ color: "black" }}
                   >
                     {title}
                   </NavButton>
@@ -131,6 +132,7 @@ const Navbar = () => {
                   href="/contact"
                   target="_self"
                   rel="noopener noreferrer"
+                  sx={{ color: "black", borderColor: "black " }}
                 >
                   Get in Touch
                 </GetInTouchButton>
@@ -145,7 +147,7 @@ const Navbar = () => {
                 edge="end"
                 aria-label="menu"
                 onClick={handleMenuOpen}
-                sx={{ color: "#2A2F43" }}
+                sx={{ color: "#2a2f43" }}
               >
                 <MenuIcon />
               </IconButton>

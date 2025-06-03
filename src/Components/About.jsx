@@ -68,11 +68,11 @@ const AboutUs = () => {
             textAlign: "center",
           }}
         >
-          Founded with a passion for technology and innovation, Uddheshya has
-          grown into a leading provider of IT solutions, digital marketing, app
-          development, and web design. Our mission is to empower businesses to
-          thrive in the digital era by delivering tailor-made solutions with
-          quality and integrity.
+          Founded with a passion for technology and innovation, Siddhartha
+          Vanasthali Studios has grown into a leading provider of IT solutions,
+          digital marketing, app development, and web design. Our mission is to
+          empower businesses to thrive in the digital era by delivering
+          tailor-made solutions with quality and integrity.
         </Typography>
 
         {/* Our Team Section */}
@@ -83,13 +83,29 @@ const AboutUs = () => {
             fontWeight: "bold",
             color: "#2a2f43",
             textAlign: "center",
-            mb: 6,
+            mb: 2,
             letterSpacing: 1,
           }}
         >
           Meet Our Team
         </Typography>
-
+        <Typography
+          variant="body1"
+          sx={{
+            maxWidth: 800,
+            mx: "auto",
+            mb: { xs: 8, md: 12 },
+            color: "#555",
+            fontSize: "1.1rem",
+            lineHeight: 1.7,
+            textAlign: "center",
+          }}
+        >
+          Our team, who thrives on collaboration, creativity, and transparency,
+          will work rigorously to unify local insights with best practices
+          across the globe to provide you with smart marketing solutions that
+          will have a measurable impact.
+        </Typography>
         <Grid container spacing={6} justifyContent="center">
           {teamMembers.map(({ name, role, image }) => (
             <Grid

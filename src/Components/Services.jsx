@@ -14,19 +14,43 @@ import TrendingUpIcon from "@mui/icons-material/TrendingUp";
 import PhoneIphoneIcon from "@mui/icons-material/PhoneIphone";
 import LanguageIcon from "@mui/icons-material/Language";
 import DesignServicesIcon from "@mui/icons-material/DesignServices";
+import PeopleIcon from "@mui/icons-material/People";
+import EventAvailableIcon from "@mui/icons-material/EventAvailable";
+import PodcastIcon from "@mui/icons-material/GraphicEq"; // podcast icon
+import LocalPlayIcon from "@mui/icons-material/LocalPlay"; // for channel distribution
+import HotelIcon from "@mui/icons-material/Hotel"; // hospitality
+import CampaignIcon from "@mui/icons-material/Campaign"; // promotion
+import PaidIcon from "@mui/icons-material/Payment"; // paid advertising
+import BrushIcon from "@mui/icons-material/Brush"; // branding
+import SearchIcon from "@mui/icons-material/Search"; // SEO
+import BarChartIcon from "@mui/icons-material/BarChart"; // analytics
+import SchoolIcon from "@mui/icons-material/School"; // education
+import MusicNoteIcon from "@mui/icons-material/MusicNote"; // music promotion
 
 const services = [
   {
-    title: "Video Editing",
+    title: "Graphic & UI Design",
     description:
-      "Professional video editing services to create engaging and compelling visual content that boosts your brand visibility.",
-    icon: <VideocamIcon sx={{ fontSize: 60, color: "#2a2f43" }} />,
+      "Creative design services including branding, UI/UX design, and graphics that communicate your story effectively.",
+    icon: <DesignServicesIcon sx={{ fontSize: 60, color: "#2a2f43" }} />,
   },
   {
-    title: "Digital Marketing",
+    title: "Social Media Management",
     description:
-      "Data-driven marketing strategies including SEO, social media management, content creation, and paid campaigns to grow your audience.",
-    icon: <TrendingUpIcon sx={{ fontSize: 60, color: "#2a2f43" }} />,
+      "Comprehensive management of your social channels to engage your audience and build your brand presence.",
+    icon: <PeopleIcon sx={{ fontSize: 60, color: "#2a2f43" }} />,
+  },
+  {
+    title: "Content Creation",
+    description:
+      "High-quality written, visual, and multimedia content crafted to captivate and inform your target audience.",
+    icon: <BrushIcon sx={{ fontSize: 60, color: "#2a2f43" }} />,
+  },
+  {
+    title: "Influencer and Community Marketing",
+    description:
+      "Leverage influencers and foster strong communities to amplify your message authentically.",
+    icon: <CampaignIcon sx={{ fontSize: 60, color: "#2a2f43" }} />,
   },
   {
     title: "App Development",
@@ -41,10 +65,65 @@ const services = [
     icon: <LanguageIcon sx={{ fontSize: 60, color: "#2a2f43" }} />,
   },
   {
-    title: "Graphic & UI Design",
+    title: "Event Promotion and Coordination",
     description:
-      "Creative design services including branding, UI/UX design, and graphics that communicate your story effectively.",
-    icon: <DesignServicesIcon sx={{ fontSize: 60, color: "#2a2f43" }} />,
+      "Strategic planning and promotion of events to maximize attendance and engagement.",
+    icon: <EventAvailableIcon sx={{ fontSize: 60, color: "#2a2f43" }} />,
+  },
+  {
+    title: "Podcast and YouTube Channel Distribution",
+    description:
+      "Manage and distribute audio and video content effectively across platforms to grow your audience.",
+    icon: <PodcastIcon sx={{ fontSize: 60, color: "#2a2f43" }} />,
+  },
+  {
+    title: "Hospitality and Entertainment Marketing",
+    description:
+      "Specialized marketing for hospitality and entertainment sectors to attract and delight customers.",
+    icon: <HotelIcon sx={{ fontSize: 60, color: "#2a2f43" }} />,
+  },
+  {
+    title: "Paid Advertising and Media Buying",
+    description:
+      "Optimize your advertising spend with strategic media buying and campaign management.",
+    icon: <PaidIcon sx={{ fontSize: 60, color: "#2a2f43" }} />,
+  },
+  {
+    title: "Branding and Identity Development",
+    description:
+      "Create memorable brand identities that resonate and build trust with your audience.",
+    icon: <BrushIcon sx={{ fontSize: 60, color: "#2a2f43" }} />,
+  },
+
+  {
+    title: "Research and Analytics for Marketing Strategy",
+    description:
+      "In-depth market research and analytics to craft precise and effective marketing strategies.",
+    icon: <BarChartIcon sx={{ fontSize: 60, color: "#2a2f43" }} />,
+  },
+  {
+    title: "Educational Campaigns and Conference Management",
+    description:
+      "Plan and manage impactful educational campaigns and conferences to engage your target groups.",
+    icon: <SchoolIcon sx={{ fontSize: 60, color: "#2a2f43" }} />,
+  },
+  {
+    title: "Music and Cultural Brand Promotion",
+    description:
+      "Promote music and cultural brands through innovative marketing and event partnerships.",
+    icon: <MusicNoteIcon sx={{ fontSize: 60, color: "#2a2f43" }} />,
+  },
+  {
+    title: "Video Editing",
+    description:
+      "Professional video editing services to create engaging and compelling visual content that boosts your brand visibility.",
+    icon: <VideocamIcon sx={{ fontSize: 60, color: "#2a2f43" }} />,
+  },
+  {
+    title: "Digital Marketing",
+    description:
+      "Data-driven marketing strategies including SEO, social media management, content creation, and paid campaigns to grow your audience.",
+    icon: <TrendingUpIcon sx={{ fontSize: 60, color: "#2a2f43" }} />,
   },
 ];
 

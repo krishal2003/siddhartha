@@ -14,6 +14,7 @@ import MarketingIcon from "@mui/icons-material/TrendingUp";
 import PhoneIphoneIcon from "@mui/icons-material/PhoneIphone";
 import LanguageIcon from "@mui/icons-material/Language";
 import HeroSection from "./HeroSection";
+import MainContent from "./MainContent";
 
 const services = [
   {
@@ -49,8 +50,8 @@ const HomePage = () => {
   return (
     <Box>
       <HeroSection />
-
-      <Container sx={{ py: 5 }}>
+      <MainContent />
+      {/* <Container sx={{ py: 5 }}>
         <Typography
           variant={isMobile ? "h4" : "h3"}
           component="h2"
@@ -137,6 +138,14 @@ const HomePage = () => {
               lineHeight: 1.7,
             }}
           >
+            Siddhartha Vanasthali is a new marketing agency based in Nepal which
+            you will find to focus on delivering data-driven value across
+            sectors such as education, hospitality, INGOs and creative
+            industries. You, as our client, will see ultimate results from our
+            performance-oriented campaigns because we combine design,
+            storytelling, and digital strategy with detailed analytics.
+            <br />
+            <br />
             We combine technical expertise with creativity to deliver solutions
             that not only meet your business goals but exceed expectations. Our
             customer-focused approach ensures that every project is tailored to
@@ -161,7 +170,7 @@ const HomePage = () => {
             Join us to unlock the full potential of your digital presence.
           </Typography>
         </Box>
-      </Container>
+      </Container> */}
     </Box>
   );
 };

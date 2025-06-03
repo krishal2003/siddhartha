@@ -139,11 +139,11 @@ const Footer = () => {
             <Typography mb={1.5}>
               Email:{" "}
               <Link
-                href="mailto:uddheshya@gmail.com"
+                href="mailto:siddharthavanasthali@gmail.com"
                 color="inherit"
                 underline="hover"
               >
-                uddheshya@gmail.com
+                siddharthavanasthali@gmail.com
               </Link>
             </Typography>
             <Typography mb={1.5}>
@@ -152,7 +152,7 @@ const Footer = () => {
                 +977 9811111111
               </Link>
             </Typography>
-            <Typography>Location: Pulchowk, Kathmandu</Typography>
+            <Typography>Location: Vanasthali, Kathmandu</Typography>
           </Grid>
 
           {/* Connect */}
@@ -204,7 +204,8 @@ const Footer = () => {
         <Divider sx={{ bgcolor: "rgba(255,255,255,0.2)", my: 5 }} />
 
         <Typography variant="body2" sx={{ textAlign: "center", opacity: 0.7 }}>
-          &copy; {new Date().getFullYear()} Uddheshya. All rights reserved.
+          &copy; {new Date().getFullYear()} Siddhartha Vanasthali. All rights
+          reserved.
         </Typography>
       </Container>
     </Box>

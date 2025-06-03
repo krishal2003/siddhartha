@@ -1,67 +1,120 @@
 // src/components/HeroSection.jsx
 import React from "react";
-import { Box, Typography, Container } from "@mui/material";
+import { Box, Typography, Container, Button } from "@mui/material";
+import PlayArrowIcon from "@mui/icons-material/PlayArrow";
 
 const HeroSection = () => {
   return (
     <Box
+      component="section"
       sx={{
         position: "relative",
-        height: { xs: "60vh", md: "80vh" },
+        minHeight: { xs: "calc(60vh - 64px)", md: "calc(80vh - 64px)" },
+        maxHeight: { xs: "80vh", md: "90vh" },
+        mt: "80px", // margin top to clear navbar height
+        pb: { xs: 6, md: 8 },
         overflow: "hidden",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        color: "#2a2f43",
+        color: "#fff",
+        backgroundImage:
+          "url('https://images.unsplash.com/20/cambridge.JPG?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dW5pdmVyc2l0eXxlbnwwfHwwfHx8MA%3D%3D')",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
       }}
     >
+      {/* Dark overlay */}
       <Box
         sx={{
           position: "absolute",
+          top: 0,
+          left: 0,
           width: "100%",
           height: "100%",
-          bgcolor: "rgba(255, 255, 255, 0.85)",
-          zIndex: 2,
+          bgcolor: "rgba(0, 0, 0, 0.55)", // slightly darker overlay for contrast
+          zIndex: 1,
         }}
       />
 
       <Container
         sx={{
           position: "relative",
-          zIndex: 3,
+          zIndex: 2,
           textAlign: "center",
           maxWidth: "md",
-          px: 3,
+          px: { xs: 2, sm: 3 },
         }}
       >
-        <Typography
-          variant="h1"
-          component="h1"
+        <Box
           sx={{
-            fontWeight: "bold",
-            fontSize: { xs: "2.5rem", md: "4rem" },
-            lineHeight: 1.2,
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            gap: 2,
+            flexWrap: "wrap",
             mb: 2,
-            color: "#2a2f43",
           }}
         >
-          Powering Your Digital Future
-        </Typography>
+          <img src="logo.png" alt="College Logo" width="120" />
+          <Typography
+            variant="h1"
+            component="h1"
+            sx={{
+              fontWeight: "bold",
+              fontSize: { xs: "2rem", sm: "3rem", md: "4rem" },
+              lineHeight: 1.2,
+              color: "#fff",
+              whiteSpace: "nowrap",
+            }}
+          >
+            Siddartha Vanasthali Institute
+          </Typography>
+        </Box>
 
         <Typography
           variant="h5"
           component="p"
           sx={{
             fontWeight: "medium",
-            fontSize: { xs: "1rem", md: "1.5rem" },
-            color: "#2a2f43",
+            fontSize: { xs: "1rem", sm: "1.2rem", md: "1.5rem" },
+            color: "#ddd",
             maxWidth: 600,
-            margin: "0 auto",
+            mx: "auto",
+            mb: 5,
+            px: { xs: 1, sm: 0 },
           }}
         >
-          IT solutions, digital marketing, app & web development tailored for
-          your success.
+          Take Flight With Your Dreams: Bachelor of Aviation Management
         </Typography>
+
+        <Box sx={{ display: "flex", justifyContent: "center" }}>
+          <Button
+            variant="outlined"
+            sx={{
+              color: "#fff",
+              borderColor: "#fff",
+              letterSpacing: 2,
+              px: 4,
+              borderRadius: 0,
+              fontWeight: "bold",
+              fontSize: "0.9rem",
+              textTransform: "uppercase",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              gap: 1,
+              "&:hover": {
+                borderColor: "#bbb",
+                backgroundColor: "rgba(255, 255, 255, 0.1)",
+              },
+            }}
+            startIcon={<PlayArrowIcon />}
+          >
+            Watch Campus Video Tour
+          </Button>
+        </Box>
       </Container>
     </Box>
   );
