@@ -54,9 +54,9 @@ const GetInTouchButton = styled(Button)({
   padding: "10px 0",
   transition: "all 0.3s ease",
   "&:hover": {
-    backgroundColor: "#white",
-    color: "#black",
-    borderColor: "#white",
+    backgroundColor: "#fff", // White background on hover
+    color: "#000", // Black text on hover
+    borderColor: "#fff", // White border on hover
   },
 });
 
@@ -91,9 +91,17 @@ const Navbar = () => {
 
   return (
     <AppBar
-      position="absolute"
-      elevation={0}
-      sx={{ background: "transparent", boxShadow: "none", paddingTop: 2 }}
+      position="fixed" // Keep navbar fixed at top
+      elevation={4} // Add slight shadow for separation
+      sx={{
+        backgroundColor: "#fff", // Set white background
+        boxShadow: "0px 4px 10px rgba(0, 0, 0, 0.1)", // Add shadow for visibility
+        paddingTop: 2,
+        top: 0, // Ensure it sticks to the top
+        left: 0,
+        right: 0,
+        zIndex: 1100, // Keep navbar on top when scrolling
+      }}
     >
       <Container maxWidth="lg">
         <Toolbar disableGutters sx={{ justifyContent: "space-between" }}>
