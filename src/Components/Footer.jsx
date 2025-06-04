@@ -139,20 +139,20 @@ const Footer = () => {
             <Typography mb={1.5}>
               Email:{" "}
               <Link
-                href="mailto:siddharthavanasthali@gmail.com"
+                href="mailto:siddharthavanasthalipanauti@gmail.com"
                 color="inherit"
                 underline="hover"
               >
-                siddharthavanasthali@gmail.com
+                siddharthavanasthalipanauti@gmail.com{" "}
               </Link>
             </Typography>
             <Typography mb={1.5}>
               Phone:{" "}
-              <Link href="tel:+9779811111111" color="inherit" underline="hover">
-                +977 9811111111
+              <Link href="tel:+9779860001697" color="inherit" underline="hover">
+                +977 9860001697
               </Link>
             </Typography>
-            <Typography>Location: Vanasthali, Kathmandu</Typography>
+            <Typography>Location: Banepa-5, Kavrepalanchok</Typography>
           </Grid>
 
           {/* Connect */}

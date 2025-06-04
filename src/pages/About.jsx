@@ -5,11 +5,20 @@ import {
   Container,
   Typography,
   Grid,
-  Paper,
   Divider,
   Button,
   Stack,
 } from "@mui/material";
+import {
+  AirportShuttle,
+  FlightTakeoff,
+  Security,
+  School,
+  AccountBalance,
+  TrendingUp,
+  Work,
+  PeopleAlt,
+} from "@mui/icons-material";
 
 const AboutUs = () => {
   return (
@@ -20,7 +29,7 @@ const AboutUs = () => {
           variant="h3"
           component="h1"
           align="center"
-          sx={{ fontWeight: "700", mb: 1 }}
+          sx={{ fontWeight: "700", mb: 1, mt: 1 }}
         >
           About
         </Typography>
@@ -54,11 +63,10 @@ const AboutUs = () => {
               paragraph
               sx={{ lineHeight: 1.7 }}
             >
-              The Bachelor of Aviation Management (BAM) at Siddhartha Vanasthali
-              College is designed to prepare future leaders in the aviation
-              industry. The program integrates aviation operations, management
-              principles, and safety protocols to provide a comprehensive
-              education.
+              Bachelor of Aviation Management (BAM) is a program from
+              internationally accredited Kathmandu University, launched by
+              renowned aviation entity Annapurna Ventures in collaboration with
+              the reputable Siddhartha Vanasthali Institute, Panauti.
             </Typography>
             <Typography
               variant="body1"
@@ -66,10 +74,16 @@ const AboutUs = () => {
               paragraph
               sx={{ lineHeight: 1.7 }}
             >
-              Students gain hands-on experience through industry partnerships,
-              internships, and access to advanced simulation labs. Graduates are
-              equipped for diverse roles in airline management, airport
-              operations, and aviation consultancy.
+              Bachelor of Aviation Management (BAM) is a four-year undergraduate
+              program that provides you with the skills and knowledge to
+              effectively manage aviation operations, airlines, and airports.
+              This program is for you if you seek success in Nepal’s rapidly
+              growing industry because of its comprehensive training integrated
+              with industry experience, educational legacy, and academic
+              excellence. Collaboration of renowned education institutions
+              Kathmandu University and Siddhartha Vanasthali with Annapurna
+              Ventures, a major force in Nepal’s aviation sector, makes BAM the
+              best program for future aviation leaders .
             </Typography>
 
             <Typography variant="h6" sx={{ fontWeight: "700", mt: 5, mb: 2 }}>
@@ -88,6 +102,253 @@ const AboutUs = () => {
             </Typography>
           </Grid>
         </Grid>
+
+        <Divider sx={{ mb: { xs: 8, md: 7 } }} />
+
+        {/* Your Future Section */}
+        <Typography
+          variant="h4"
+          sx={{ fontWeight: "700", mb: 4, textAlign: "center" }}
+        >
+          Your Future
+        </Typography>
+        <Typography
+          variant="h6"
+          sx={{ fontWeight: "500", mb: 3, textAlign: "center" }}
+        >
+          As a graduate of the program, you can pursue various careers in the
+          aviation industry that is blooming globally.
+        </Typography>
+
+        <Box
+          sx={{
+            display: "flex",
+            flexWrap: "wrap",
+            justifyContent: "space-between",
+            gap: 4,
+            mb: { xs: 8, md: 12 },
+          }}
+        >
+          {/* Career Path - Airport Management */}
+          <Box
+            sx={{
+              backgroundColor: "#f1f1f1",
+              p: 4,
+              borderRadius: 3,
+              textAlign: "center",
+              flex: "1 1 calc(33.333% - 16px)", // Adjusts width and adds gap
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "space-between",
+              height: "100%",
+            }}
+          >
+            <AirportShuttle sx={{ fontSize: 40, color: "#2a2f43", mb: 2 }} />
+            <Typography variant="h6" sx={{ fontWeight: "700", mb: 2 }}>
+              Airport Management
+            </Typography>
+            <Typography
+              variant="body2"
+              sx={{ color: "text.secondary", lineHeight: 1.7 }}
+            >
+              • Airport Operations Manager
+              <br />
+              • Airport Security Manager
+              <br />• Airport Facilities Manager
+            </Typography>
+          </Box>
+
+          {/* Career Path - Airline Management */}
+          <Box
+            sx={{
+              backgroundColor: "#e8f4f8",
+              p: 4,
+              borderRadius: 3,
+              textAlign: "center",
+              flex: "1 1 calc(33.333% - 16px)", // Adjusts width and adds gap
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "space-between",
+              height: "100%",
+            }}
+          >
+            <FlightTakeoff sx={{ fontSize: 40, color: "#2a2f43", mb: 2 }} />
+            <Typography variant="h6" sx={{ fontWeight: "700", mb: 2 }}>
+              Airline Management
+            </Typography>
+            <Typography
+              variant="body2"
+              sx={{ color: "text.secondary", lineHeight: 1.7 }}
+            >
+              • Airline Operations Manager
+              <br />
+              • Revenue Management Analyst
+              <br />• Customer Service Manager
+            </Typography>
+          </Box>
+
+          {/* Career Path - Aviation Safety and Security */}
+          <Box
+            sx={{
+              backgroundColor: "#f7f7f7",
+              p: 4,
+              borderRadius: 3,
+              textAlign: "center",
+              flex: "1 1 calc(33.333% - 16px)", // Adjusts width and adds gap
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "space-between",
+              height: "100%",
+            }}
+          >
+            <Security sx={{ fontSize: 40, color: "#2a2f43", mb: 2 }} />
+            <Typography variant="h6" sx={{ fontWeight: "700", mb: 2 }}>
+              Aviation Safety and Security
+            </Typography>
+            <Typography
+              variant="body2"
+              sx={{ color: "text.secondary", lineHeight: 1.7 }}
+            >
+              • Aviation Safety Inspector
+              <br />• Safety Manager
+            </Typography>
+          </Box>
+
+          {/* Career Path - Aviation Consulting */}
+          <Box
+            sx={{
+              backgroundColor: "#e1eaf3",
+              p: 4,
+              borderRadius: 3,
+              textAlign: "center",
+              flex: "1 1 calc(33.333% - 16px)", // Adjusts width and adds gap
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "space-between",
+              height: "100%",
+            }}
+          >
+            <School sx={{ fontSize: 40, color: "#2a2f43", mb: 2 }} />
+            <Typography variant="h6" sx={{ fontWeight: "700", mb: 2 }}>
+              Aviation Consulting
+            </Typography>
+            <Typography
+              variant="body2"
+              sx={{ color: "text.secondary", lineHeight: 1.7 }}
+            >
+              • Aviation Consultant
+              <br />• Regulatory Affairs Specialist
+            </Typography>
+          </Box>
+
+          {/* Career Path - Aircraft Leasing and Finance */}
+          <Box
+            sx={{
+              backgroundColor: "#f5f5f5",
+              p: 4,
+              borderRadius: 3,
+              textAlign: "center",
+              flex: "1 1 calc(33.333% - 16px)", // Adjusts width and adds gap
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "space-between",
+              height: "100%",
+            }}
+          >
+            <AccountBalance sx={{ fontSize: 40, color: "#2a2f43", mb: 2 }} />
+            <Typography variant="h6" sx={{ fontWeight: "700", mb: 2 }}>
+              Aircraft Leasing and Finance
+            </Typography>
+            <Typography
+              variant="body2"
+              sx={{ color: "text.secondary", lineHeight: 1.7 }}
+            >
+              • Leasing Manager
+              <br />• Finance Analyst
+            </Typography>
+          </Box>
+
+          {/* Career Path - Air Traffic Management */}
+          <Box
+            sx={{
+              backgroundColor: "#f1f1f1",
+              p: 4,
+              borderRadius: 3,
+              textAlign: "center",
+              flex: "1 1 calc(33.333% - 16px)", // Adjusts width and adds gap
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "space-between",
+              height: "100%",
+            }}
+          >
+            <TrendingUp sx={{ fontSize: 40, color: "#2a2f43", mb: 2 }} />
+            <Typography variant="h6" sx={{ fontWeight: "700", mb: 2 }}>
+              Air Traffic Management
+            </Typography>
+            <Typography
+              variant="body2"
+              sx={{ color: "text.secondary", lineHeight: 1.7 }}
+            >
+              • Air Traffic Controller
+              <br />• Air Traffic Management Specialist
+            </Typography>
+          </Box>
+
+          {/* Career Path - Government and Regulatory Bodies */}
+          <Box
+            sx={{
+              backgroundColor: "#e8f4f8",
+              p: 4,
+              borderRadius: 3,
+              textAlign: "center",
+              flex: "1 1 calc(33.333% - 16px)", // Adjusts width and adds gap
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "space-between",
+              height: "100%",
+            }}
+          >
+            <Work sx={{ fontSize: 40, color: "#2a2f43", mb: 2 }} />
+            <Typography variant="h6" sx={{ fontWeight: "700", mb: 2 }}>
+              Government and Regulatory Bodies
+            </Typography>
+            <Typography
+              variant="body2"
+              sx={{ color: "text.secondary", lineHeight: 1.7 }}
+            >
+              • Aviation Policy Analyst
+              <br />• Regulatory Compliance Manager
+            </Typography>
+          </Box>
+
+          {/* Career Path - Aviation Logistics */}
+          <Box
+            sx={{
+              backgroundColor: "#f7f7f7",
+              p: 4,
+              borderRadius: 3,
+              textAlign: "center",
+              flex: "1 1 calc(33.333% - 16px)", // Adjusts width and adds gap
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "space-between",
+              height: "100%",
+            }}
+          >
+            <PeopleAlt sx={{ fontSize: 40, color: "#2a2f43", mb: 2 }} />
+            <Typography variant="h6" sx={{ fontWeight: "700", mb: 2 }}>
+              Aviation Logistics
+            </Typography>
+            <Typography
+              variant="body2"
+              sx={{ color: "text.secondary", lineHeight: 1.7 }}
+            >
+              • Logistics Manager
+              <br />• Supply Chain Coordinator
+            </Typography>
+          </Box>
+        </Box>
 
         <Divider sx={{ mb: { xs: 8, md: 12 } }} />
 

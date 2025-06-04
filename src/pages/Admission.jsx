@@ -13,20 +13,19 @@ import {
 } from "@mui/material";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 
-const admissionRequirements = [
-  "Completed high school (10+2) or equivalent",
-  "Minimum 60% aggregate marks in high school",
-  "Submit official transcripts and mark sheets",
-  "Passport-sized photographs (2 copies)",
-  "Valid government-issued ID",
-  "Letter of intent explaining interest in program",
+const eligibilityRequirements = [
+  "+2 or intermediate or equivalent level with minimum of 40% in aggregate or CGPA of 1.6 (out of 4.0) and minimum ‘D+’ grade in each subject in a study program of at least two-year duration in any discipline from a university/board recognized by Kathmandu University",
+  "GCE Advanced Level students who have passed minimum three subjects in A Level and one general paper in AS Level with marks/grades requirements as mentioned above",
+  "International Baccalaureate (IB) students who have passed minimum 6 courses (at least 3 courses in Higher Level) with 24 points in aggregate",
+  "CTEVT students should have a three-year diploma with 40% in aggregate.",
+  "CBSE students should have minimum 40% in aggregate",
 ];
 
 const applicationSteps = [
   {
-    label: "Complete High School with minimum 60%",
+    label: "Complete High School with minimum 40%",
     description:
-      "Applicants must have completed their high school education with at least 60% aggregate marks.",
+      "Applicants must have completed their high school education with at least 40% aggregate marks.",
   },
   {
     label: "Fill out the Online Application Form",
@@ -136,11 +135,28 @@ const Admission = () => {
           Admission Requirements
         </Typography>
         <List>
-          {admissionRequirements.map((item, idx) => (
+          {eligibilityRequirements.map((item, idx) => (
             <ListItem key={idx} sx={{ pl: 0 }}>
               <ListItemText primary={`• ${item}`} />
             </ListItem>
           ))}
+        </List>
+        <Typography variant="body1" color="text.secondary" sx={{ mb: 2 }}>
+          <strong>Note:</strong>
+        </Typography>
+        <List>
+          <ListItem sx={{ pl: 0 }}>
+            <ListItemText primary="Ten percent of the seats are reserved for foreign students." />
+          </ListItem>
+          <ListItem sx={{ pl: 0 }}>
+            <ListItemText primary="Applicants who have appeared in 12th grade examination may apply on a provisional basis." />
+          </ListItem>
+          <ListItem sx={{ pl: 0 }}>
+            <ListItemText primary="Applicants accepted provisionally must satisfy above eligibility criteria to continue their study." />
+          </ListItem>
+          <ListItem sx={{ pl: 0 }}>
+            <ListItemText primary="Should appear and pass KUUMAT test." />
+          </ListItem>
         </List>
       </Paper>
     </Container>
