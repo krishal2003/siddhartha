@@ -88,33 +88,34 @@ const HeroSection = () => {
         >
           Take Flight With Your Dreams: Bachelor of Aviation Management
         </Typography>
-
-        <Box sx={{ display: "flex", justifyContent: "center" }}>
-          <Button
-            variant="outlined"
-            sx={{
-              color: "#fff",
-              borderColor: "#fff",
-              letterSpacing: 2,
-              px: 4,
-              borderRadius: 0,
-              fontWeight: "bold",
-              fontSize: "0.9rem",
-              textTransform: "uppercase",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              gap: 1,
-              "&:hover": {
-                borderColor: "#bbb",
-                backgroundColor: "rgba(255, 255, 255, 0.1)",
-              },
-            }}
-            startIcon={<PlayArrowIcon />}
-          >
-            Watch Campus Video Tour
-          </Button>
-        </Box>
+        <a href="https://www.kusom.edu.np/" target="_blank">
+          <Box sx={{ display: "flex", justifyContent: "center" }}>
+            <Button
+              variant="outlined"
+              sx={{
+                color: "#fff",
+                borderColor: "#fff",
+                letterSpacing: 2,
+                px: 4,
+                borderRadius: 0,
+                fontWeight: "bold",
+                fontSize: "0.9rem",
+                textTransform: "uppercase",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                gap: 1,
+                "&:hover": {
+                  borderColor: "#bbb",
+                  backgroundColor: "rgba(255, 255, 255, 0.1)",
+                },
+              }}
+              startIcon={<PlayArrowIcon />}
+            >
+              Visit KUSOM Website{" "}
+            </Button>
+          </Box>
+        </a>
       </Container>
     </Box>
   );
