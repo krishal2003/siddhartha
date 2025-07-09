@@ -58,6 +58,8 @@ const HeroSection = () => {
           }}
         >
           <img src="logo.png" alt="College Logo" width="120" />
+          <img src="KU.png" alt="College Logo" width="120" />
+
           <Typography
             variant="h1"
             component="h1"
@@ -69,7 +71,7 @@ const HeroSection = () => {
               whiteSpace: "nowrap",
             }}
           >
-Siddhartha Vanasthali Institute, Affiliated to Kathmandu University (KU)
+            KU Affiliated: Siddartha Vanasthali Institute
           </Typography>
         </Box>
 
