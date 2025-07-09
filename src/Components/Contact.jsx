@@ -88,7 +88,7 @@ const Contact = () => {
                 sx={{ display: "flex", flexDirection: "column", gap: 3 }}
               >
                 <TextField
-                  label="Name *"
+                  label="Name"
                   name="name"
                   variant="outlined"
                   value={formData.name}
@@ -96,7 +96,7 @@ const Contact = () => {
                   required
                 />
                 <TextField
-                  label="Email *"
+                  label="Email"
                   name="email"
                   type="email"
                   variant="outlined"
@@ -112,7 +112,7 @@ const Contact = () => {
                   onChange={handleChange}
                 />
                 <TextField
-                  label="Message *"
+                  label="Message"
                   name="message"
                   variant="outlined"
                   multiline
