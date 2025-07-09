@@ -69,7 +69,7 @@ const HeroSection = () => {
               whiteSpace: "nowrap",
             }}
           >
-            KU Affiliated: Siddartha Vanasthali Institute
+Siddhartha Vanasthali Institute, Affiliated to Kathmandu University (KU)
           </Typography>
         </Box>
 
