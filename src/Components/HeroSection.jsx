@@ -19,7 +19,7 @@ const HeroSection = () => {
         justifyContent: "center",
         color: "#fff",
         backgroundImage:
-          "url('https://images.unsplash.com/20/cambridge.JPG?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dW5pdmVyc2l0eXxlbnwwfHwwfHx8MA%3D%3D')",
+          "url('https://siddharthavanasthali.edu.np/wp-content/uploads/2024/06/airportlogistics.jpeg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
@@ -69,7 +69,7 @@ const HeroSection = () => {
               whiteSpace: "nowrap",
             }}
           >
-            Siddartha Vanasthali Institute
+            KU Affiliated: Siddartha Vanasthali Institute
           </Typography>
         </Box>
 
