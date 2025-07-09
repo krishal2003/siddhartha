@@ -31,19 +31,19 @@ const testimonials = [
     name: "Aarav Sharma",
     role: "Alumnus, Batch 2020",
     text: "The BAM program gave me the skills and confidence to launch my career in airport management. The faculty's real-world insights and practical sessions were invaluable.",
-    img: "https://randomuser.me/api/portraits/men/32.jpg",
+    // img: "https://randomuser.me/api/portraits/men/32.jpg",
   },
   {
     name: "Mina Koirala",
     role: "Current Student",
     text: "I love the hands-on training and the opportunities to interact with industry professionals. The campus environment and support are fantastic!",
-    img: "https://randomuser.me/api/portraits/women/44.jpg",
+    // img: "https://randomuser.me/api/portraits/women/44.jpg",
   },
   {
     name: "Rajesh Thapa",
     role: "Industry Partner",
     text: "We've partnered with Siddartha Vansthali Institute to hire BAM graduates who consistently demonstrate professionalism and expertise. The program aligns well with industry needs.",
-    img: "https://randomuser.me/api/portraits/men/56.jpg",
+    // img: "https://randomuser.me/api/portraits/men/56.jpg",
   },
 ];
 
