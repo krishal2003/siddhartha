@@ -86,7 +86,7 @@ const Navbar = () => {
     { title: "Home", href: "/" },
     { title: "About", href: "/about" },
     { title: "Admission", href: "/admission" },
-    { title: "Research", href: "/research" },
+    // { title: "Research", href: "/research" },
   ];
 
   return (
