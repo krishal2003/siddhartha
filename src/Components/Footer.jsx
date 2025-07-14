@@ -179,7 +179,7 @@ const Footer = () => {
               </IconButton>
               <IconButton
                 component="a"
-                href="https://www.instagram.com/yourprofile"
+                href="https://www.instagram.com/vanasthali.official/"
                 target="_blank"
                 rel="noopener noreferrer"
                 sx={{ color: "#fff", mr: 1.5 }}
@@ -189,7 +189,7 @@ const Footer = () => {
               </IconButton>
               <IconButton
                 component="a"
-                href="https://www.linkedin.com/company/yourcompany"
+                href="https://www.linkedin.com/school/siddhartha-vanasthali-institute/people/?originalSubdomain=np"
                 target="_blank"
                 rel="noopener noreferrer"
                 sx={{ color: "#fff" }}
