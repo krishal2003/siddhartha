@@ -65,13 +65,14 @@ const HeroSection = () => {
             component="h1"
             sx={{
               fontWeight: "bold",
-              fontSize: { xs: "2rem", sm: "3rem", md: "4rem" },
+              fontSize: { xs: "2rem", sm: "2rem", md: "2rem" },
               lineHeight: 1.2,
               color: "#fff",
               whiteSpace: "nowrap",
             }}
           >
-            KU Affiliated: Siddartha Vanasthali Institute
+            Siddhartha Vanasthali Institute, Affiliated to Kathmandu University
+            (KU){" "}
           </Typography>
         </Box>
 
@@ -90,7 +91,11 @@ const HeroSection = () => {
         >
           Take Flight With Your Dreams: Bachelor of Aviation Management
         </Typography>
-        <a href="https://www.kusom.edu.np/" target="_blank">
+        <a
+          href="https://www.kusom.edu.np/"
+          target="_blank"
+          style={{ textDecoration: "none" }}
+        >
           <Box sx={{ display: "flex", justifyContent: "center" }}>
             <Button
               variant="outlined"
