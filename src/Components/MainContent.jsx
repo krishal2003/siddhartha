@@ -10,18 +10,18 @@ import FlightTakeoffIcon from "@mui/icons-material/FlightTakeoff";
 import ApartmentIcon from "@mui/icons-material/Apartment";
 import AirplanemodeActiveIcon from "@mui/icons-material/AirplanemodeActive";
 
-const infoCards = [
-  { icon: <ArrowForwardIosIcon fontSize="large" />, title: "WHY BAM?" },
-  { icon: <ApartmentIcon fontSize="large" />, title: "EXPLORE CAMPUS" },
-  {
-    icon: <FlightTakeoffIcon fontSize="large" />,
-    title: "UPCOMING ADMISSION DATES",
-  },
-  {
-    icon: <AirplanemodeActiveIcon fontSize="large" />,
-    title: "CAREER IN AVIATION",
-  },
-];
+// const infoCards = [
+//   { icon: <ArrowForwardIosIcon fontSize="large" />, title: "WHY BAM?" },
+//   { icon: <ApartmentIcon fontSize="large" />, title: "EXPLORE CAMPUS" },
+//   {
+//     icon: <FlightTakeoffIcon fontSize="large" />,
+//     title: "UPCOMING ADMISSION DATES",
+//   },
+//   {
+//     icon: <AirplanemodeActiveIcon fontSize="large" />,
+//     title: "CAREER IN AVIATION",
+//   },
+// ];
 
 const aboutText1 = `The Bachelor of Aviation Management (BAM) program offers an exceptional blend of theory and practical knowledge designed to prepare students for a dynamic aviation industry. Our curriculum covers airport management, aviation safety, air traffic control, and airline operations.`;
 const aboutText2 = `Students gain hands-on experience through our state-of-the-art simulation labs, industry internships, and seminars with aviation experts. Our graduates are equipped to take leadership roles in the global aviation sector, with strong emphasis on ethics, safety, and innovation.`;
